@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: _site 
+
+website:
+  title: "Daniel Gutiérrez - Portfolio"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Projects"
+        href: proyectos.qmd
+      - text: "About Me"
+        href: sobre-mi.qmd
+    right:
+      - icon: github
+        href: https://github.com/Gubato
+      - icon: linkedin
+        href: https://linkedin.com/in/danielgutierrez-dataanalyst
+
+format:
+  html:
+    theme: cosmo
+    toc: true

@@ -1,0 +1,15 @@
+---
+title: "Welcome to my portfolio"
+---
+
+# ¡Hola! 👋
+
+Soy analista de datos con experiencia en Python, SQL y visualización de datos.  
+En este sitio encontrarás algunos de mis proyectos y un poco sobre mi trayectoria.
+
+## Destacados
+- 📊 Análisis de ventas con Python y Pandas.
+- 📈 Dashboard interactivo con Power BI.
+- 🤖 Modelo de predicción usando Machine Learning.
+
+Para más detalles, visita la sección de [Proyectos](proyectos.qmd).

@@ -1,0 +1,14 @@
+---
+title: "Sobre mí"
+---
+
+# Sobre mí
+
+Soy apasionado por el análisis de datos y la resolución de problemas usando herramientas como:
+
+- Python (Pandas, Matplotlib, Seaborn)
+- SQL
+- Power BI y Tableau
+- Quarto para documentación y presentación
+
+Actualmente trabajo en [Tu Empresa] y busco oportunidades para seguir desarrollando mis habilidades en análisis y ciencia de datos.

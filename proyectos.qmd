@@ -1,0 +1,17 @@
+---
+title: "Mis Proyectos"
+---
+
+# Proyectos
+
+## 1. Análisis de Ventas
+**Descripción:** Limpieza y análisis de datos de ventas usando Python y Pandas.  
+**Código:** [Ver en GitHub](https://github.com/TUUSUARIO/proyecto-ventas)
+
+## 2. Dashboard de Recursos Humanos
+**Descripción:** Creación de dashboard interactivo con Power BI para seguimiento de métricas de personal.  
+**Demo:** [Ver dashboard](https://app.powerbi.com/...)
+
+## 3. Predicción de Demanda
+**Descripción:** Modelo de Machine Learning para predecir demanda semanal de productos.  
+**Código:** [Ver en GitHub](https://github.com/TUUSUARIO/prediccion-demanda)
