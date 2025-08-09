@@ -2,9 +2,22 @@
 title: "Sobre mí"
 ---
 
-# Sobre mí
+# About me
 
-Soy apasionado por el análisis de datos y la resolución de problemas usando herramientas como:
+My full name is Luis Daniel Gutiérrez Renero. I have a Bachelor's Degree on Audio Engineering which I gained at Rec Música Centro de Estudios Musicales, a local university here in México.
+This university is strongly attached to Berklee College of Music @ Boston, they even have an official partnership.
+
+My specialty on music was audio mastering for streaming on platforms such as Spotify, Apple Music, Amazon Music, etc.
+
+Once I finished college, I made some mastering work with some artists like Luis Guinea, Rogelio Edel, Alec Roqui.
+<a href= "https://open.spotify.com/playlist/3RepLcKraLhrv0MFpDfWlv?si=cf78133ec2c64750" target="_blank"> Spotify Playlist </a>
+
+Meanwhile I was working with all these musicians I started a job at a Call Center named REDES. It is a Collection Call Center.
+Here I started a position as an HR with recruitment tasks. I gained a lot of experience on soft skills such as clear communication, being kind and practice empathy.
+
+--- 
+
+<!--- Soy apasionado por el análisis de datos y la resolución de problemas usando herramientas como:
 
 - Python (Pandas, Matplotlib, Seaborn)
 - SQL

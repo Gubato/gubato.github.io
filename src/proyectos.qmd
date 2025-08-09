@@ -6,7 +6,14 @@ title: "Project Portfolio"
 
 ## 1. Spotify User's Activity Analysis
 - **Description:** Given a Spotify random user activity dataset, visualize important aspects of his app usage.
-- **Code:** <a href="https://github.com/Gubato/gubato.github.io/blob/main/Spotify/Top%20Spotify%20tracks.ipynb" target="_blank"> GitHub </a>
+- **Code:** <a href="https://github.com/Gubato/gubato.github.io/blob/main/Spotify/Top%20Spotify%20tracks.ipynb" 
+    target="_blank" style="
+    background-color:#007BFF;
+    color:white;
+    padding:10px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;"> GitHub </a>
 
 - [Watch full presentation](Spotify/Presentation.html) 
 
