@@ -5,7 +5,11 @@ title: "Project Portfolio"
 # Projects
 
 ## 1. Spotify User's Activity Analysis
-**Descripción:** Given a Spotify random user activity dataset, visualize important aspects of his app usage.  
-**Código:** PENDING
+**Description:** Given a Spotify random user activity dataset, visualize important aspects of his app usage.  
+**Code:** https://github.com/Gubato/gubato.github.io/blob/main/Spotify/Top%20Spotify%20tracks.ipynb
 
-```{include: Spotify/Presentation.qmd}
+<iframe src="Spotify/Presentation.html"
+            width="100%"
+            height="600px"
+            style="border:none;">
+</iframe>

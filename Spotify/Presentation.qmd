@@ -83,7 +83,7 @@ Peak listening months:
 :::
 :::::
 
----
+------------------------------------------------------------------------
 
 ## Minutes played per year
 
@@ -109,7 +109,7 @@ fig00.update_layout(
 fig00.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Most listened artists
 
@@ -135,7 +135,7 @@ fig0.update_layout(
 fig0.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Longest played tracks
 
@@ -162,7 +162,7 @@ fig.update_layout(xaxis_tickangle=45,
 fig.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Shuffle & Skip comparison
 
@@ -174,7 +174,7 @@ fig.show()
 
 -   Not shuffled & Not Skipped - User choices
 
----
+------------------------------------------------------------------------
 
 ```{python}
 # Make different datasets: 
@@ -215,7 +215,7 @@ fig3.show()
 
 ```
 
----
+------------------------------------------------------------------------
 
 ## Good recommendations \| Not Skipped & Shuffled
 
@@ -240,7 +240,7 @@ fig6.update_layout(  width=1000,
 fig6.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Possible Missclicks \| Skipped & Not Shuffled
 
@@ -265,7 +265,7 @@ fig4.update_layout(  width=1000,
 fig4.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## User choices \| Not Skipped & Not Shuffled
 
@@ -290,7 +290,7 @@ fig5.update_layout(  width=1000,
 fig5.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Good vs. Bad recommendation comparison
 
@@ -337,7 +337,7 @@ fig7.update_layout(height=200)
 fig7.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Skipping tracks reasons comparison
 
@@ -363,7 +363,7 @@ fig8.update_layout(
 fig8.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Starting tracks reasons comparison
 
@@ -389,7 +389,7 @@ fig9.update_layout(
 fig9.show()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Platform Usage Over the Years
 
