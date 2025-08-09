@@ -1,0 +1,416 @@
+---
+title: "User listening behaviour"
+format: revealjs
+jupyter: python3
+editor: visual
+theme: solarized
+transition: fade
+transition-speed: slow
+slide-number: true
+fontsize: 24px
+---
+
+```{python}
+# Import necessary libraries
+
+import warnings
+import kagglehub
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import plotly.graph_objects as go
+
+warnings.filterwarnings("ignore", category=UserWarning, module="tqdm")
+
+# Download latest version of the dataset
+path = kagglehub.dataset_download("anandshaw2001/top-spotify-songs-in-countries")
+
+# Load the dataset
+df = pd.read_csv(path + "/spotify_history.csv")
+
+# Datatype conversion
+df['ts'] = pd.to_datetime(df['ts'])
+
+# Remove explicit duplicate rows
+df = df.drop_duplicates()
+
+# Keep relevant columns
+df = df.drop('spotify_track_uri',axis=1)
+
+# Extract date and time components
+df['year'] = df['ts'].dt.year
+df['month'] = df['ts'].dt.month
+```
+
+## Listening time over the years
+
+```{python}
+# Listening time over the years
+
+listening_time_per_year = df.groupby(['year','month']).agg(total_listening_time=('ms_played', 'sum')).reset_index()
+listening_time_per_year['date'] = pd.to_datetime(listening_time_per_year[['year', 'month']].assign(day=1))
+listening_time_per_year['minutes_listened'] = listening_time_per_year['total_listening_time'] / 60000
+
+fig2 = px.line(listening_time_per_year, x='date', 
+               y='minutes_listened', 
+               title='Total User Listening Time Over the Years',
+               labels={'minutes_listened': 'Total Listening Time (mins)', 'date': 'Date'},
+               markers=True)
+fig2.update_layout(
+    width=1000,
+    height=400,
+    margin=dict(l=20, r=20, t=50, b=0))
+fig2.show()
+```
+
+Peak listening months:
+
+::::: columns
+::: column
+-   October 2020
+
+-   November 2020
+
+-   January 2021
+:::
+
+::: column
+-   6,890.13 minutes
+
+-   6,855.32 minutes
+
+-   6,782.22 minutes
+:::
+:::::
+
+---
+
+## Minutes played per year
+
+```{python}
+# Mins played per year
+
+mins_played_per_year = df.groupby('year').agg(total_listening_time=('ms_played', 'sum')).reset_index()
+mins_played_per_year['minutes_listened'] = (mins_played_per_year['total_listening_time'] / 60000).round(2)
+
+fig00 = px.bar(mins_played_per_year,
+             x='year',
+             y='minutes_listened',
+             title='Total Listening Time Per Year',
+             labels={'minutes_listened': 'Total Listening Time (mins)', 'year': 'Year'},
+             text='minutes_listened',
+             color='minutes_listened',
+             color_continuous_scale=px.colors.sequential.Plasma)
+fig00.update_layout(
+    width=1000,
+    height=400,
+    margin=dict(l=20, r=20, t=50, b=0)
+)
+fig00.show()
+```
+
+---
+
+## Most listened artists
+
+```{python}
+# Most listened artists
+top_artists = df.groupby('artist_name').agg(total_listening_time=('ms_played', 'sum')).reset_index()
+top_artists['minutes_listened'] = (top_artists['total_listening_time'] / 60000).round(2)
+top_artists = top_artists.sort_values(by='minutes_listened', ascending=False).head(10)
+
+fig0 = px.bar(top_artists,
+               x='artist_name', 
+               y='minutes_listened', 
+               title='Top 10 Most Listened Artists',
+               labels={'minutes_listened': 'Total Listening Time (mins)', 'artist_name': 'Artist'},
+               color='minutes_listened',
+               text='minutes_listened')
+
+fig0.update_layout(
+    width=1000,
+    height=400,
+    margin=dict(l=20, r=20, t=50, b=0)
+)
+fig0.show()
+```
+
+---
+
+## Longest played tracks
+
+```{python}
+# Longest played tracks
+
+top_tracks = df.groupby(['track_name','artist_name']).agg(total_ms_played = ('ms_played', 'sum')).reset_index().sort_values(by='total_ms_played', ascending=False).head(10)
+top_tracks['total_minutes_played'] = (top_tracks['total_ms_played'] / 60000).round(2)
+
+fig = px.bar(
+    top_tracks, 
+    x='track_name', 
+    y='total_minutes_played', 
+    title='Top 10 Longest Played Tracks by User',
+    labels={'track_name': 'Track Name', 'total_minutes_played': 'Total Minutes Played'},
+    color='artist_name',
+    text='total_minutes_played',
+    )
+
+fig.update_layout(xaxis_tickangle=45,
+                    width=1000,
+                    height=700,
+                    margin=dict(l=20, r=20, t=50, b=0))
+fig.show()
+```
+
+---
+
+## Shuffle & Skip comparison
+
+-   Shuffled & Skipped - Bad Recommendations
+
+-   Shuffled & Not Skipped - Good Recommendations
+
+-   Not shuffled & Skipped - Possible Missclick
+
+-   Not shuffled & Not Skipped - User choices
+
+---
+
+```{python}
+# Make different datasets: 
+# Shuffled and skipped
+# Shuffled and not skipped
+# Not shuffled and skipped
+# Not shuffled and not skipped
+
+df_shuffled_skip = df.query("shuffle == True and skipped == True")
+df_shuffled_not_skip = df.query("shuffle == True and skipped == False")
+df_not_shuffled_skip = df.query("shuffle == False and skipped == True")
+df_not_shuffled_not_skip = df.query("shuffle == False and skipped == False")
+
+df_list = [df_shuffled_skip, df_shuffled_not_skip, df_not_shuffled_skip, df_not_shuffled_not_skip]
+```
+
+## Bad recommendations \| Skipped & Shuffled
+
+```{python}
+# Most skipped tracks when shuffled - Bad recommendations
+
+top_shuffled_skipped_tracks = df_shuffled_skip.groupby(['track_name','artist_name']).agg(times_skipped = ('skipped','count')).reset_index().sort_values(by='times_skipped', ascending=False).head(10)
+
+fig3 = px.bar(
+    top_shuffled_skipped_tracks, 
+    x='track_name', 
+    y='times_skipped', 
+    title='Top 10 Most Skipped Tracks When Shuffled | Bad Recommendations',
+    labels={'track_name': 'Track Name', 'times_skipped': 'Times Skipped'},
+    color='artist_name',
+    text='times_skipped',
+)
+
+fig3.update_layout(  width=1000,
+                    height=500,
+                    margin=dict(l=20, r=20, t=50, b=0))
+fig3.show()
+
+```
+
+---
+
+## Good recommendations \| Not Skipped & Shuffled
+
+```{python}
+# Top 10 tracks shuffled and not skipped - Great recommendations
+
+top_shuffled_not_skipped_tracks = df_shuffled_not_skip.groupby(['track_name','artist_name']).agg(times_played = ('skipped','count')).reset_index().sort_values(by='times_played', ascending=False).head(10)
+
+fig6 = px.bar(
+    top_shuffled_not_skipped_tracks, 
+    x='track_name', 
+    y='times_played', 
+    title='Top 10 Tracks Shuffled and Not Skipped | Great Recommendations',
+    labels={'track_name': 'Track Name', 'times_played': 'Times Played'},
+    color='artist_name',
+    text='times_played'
+)
+
+fig6.update_layout(  width=1000,
+                    height=500,
+                    margin=dict(l=20, r=20, t=50, b=0))
+fig6.show()
+```
+
+---
+
+## Possible Missclicks \| Skipped & Not Shuffled
+
+```{python}
+# Most skipped tracks when not shuffled - User missclick?
+
+top_not_shuffled_skipped_tracks = df_not_shuffled_skip.groupby(['track_name','artist_name']).agg(times_skipped = ('skipped','count')).reset_index().sort_values(by='times_skipped', ascending=False).head(10)
+
+fig4 = px.bar(
+    top_not_shuffled_skipped_tracks, 
+    x='track_name', 
+    y='times_skipped', 
+    title='Top 10 Most Skipped Tracks When Not Shuffled | Possible Missclicks',
+    labels={'track_name': 'Track Name', 'times_skipped': 'Times Skipped'},
+    color='artist_name',
+    text='times_skipped'
+)
+
+fig4.update_layout(  width=1000,
+                    height=500,
+                    margin=dict(l=20, r=20, t=50, b=0))
+fig4.show()
+```
+
+---
+
+## User choices \| Not Skipped & Not Shuffled
+
+```{python}
+# Top 10 tracks not shuffled and not skipped - Users favorites
+
+top_not_shuffled_not_skipped_tracks = df_not_shuffled_not_skip.groupby(['track_name','artist_name']).agg(times_played = ('skipped','count')).reset_index().sort_values(by='times_played', ascending=False).head(10)
+
+fig5 = px.bar(
+    top_not_shuffled_not_skipped_tracks, 
+    x='track_name', 
+    y='times_played', 
+    title='Top 10 Tracks Not Shuffled and Not Skipped | Users Favorites',
+    labels={'track_name': 'Track Name', 'times_played': 'Times Played'},
+    color='artist_name',
+    text='times_played'
+)
+
+fig5.update_layout(  width=1000,
+                    height=500,
+                    margin=dict(l=20, r=20, t=50, b=0))
+fig5.show()
+```
+
+---
+
+## Good vs. Bad recommendation comparison
+
+```{python}
+# Comparison on recommendations
+
+df['good_recommendation'] = np.where(
+    (df['shuffle'] == True) & (df['skipped'] == False), 1, 0)
+
+df['bad_recommendation'] = np.where(
+    (df['shuffle'] == True) & (df['skipped'] == True), 1, 0)
+
+# Remove non intended reasons for skipping
+df_meaningful_skips = df.query("reason_end in ['endplay', 'fwdbtn', 'trackdone', 'logout','backbtn', 'remote']")
+
+# Calculate good and bad recommendations with percentages
+good_recomendations = df_meaningful_skips['good_recommendation'].sum()
+bad_recomendations = df_meaningful_skips['bad_recommendation'].sum()
+good_percentage = (good_recomendations / (good_recomendations + bad_recomendations) * 100).round(2)
+bad_percentage = (bad_recomendations / (good_recomendations + bad_recomendations) * 100).round(2)
+
+# Create a DataFrame for the recommendations comparison
+recommendation_df = pd.DataFrame({
+    'Recommendation Type': ['Good Recommendations', 'Bad Recommendations'],
+    'Count': [good_recomendations, bad_recomendations],
+    'Percentage': [f"{good_percentage}%", f"{bad_percentage}%"]
+})
+
+fig7 = go.Figure(
+    data=[
+        go.Table(
+            header=dict(values=['Recommendation Type', 'Count', 'Percentage'],
+                        fill_color='paleturquoise',
+                        align='center'),
+            cells=dict(values=[recommendation_df['Recommendation Type'], 
+                               recommendation_df['Count'], 
+                               recommendation_df['Percentage']],
+                       fill_color='lavender',
+                       align='center'))]
+)
+
+fig7.update_layout(title='Comparison of Recommendations')
+fig7.update_layout(height=200)
+fig7.show()
+```
+
+---
+
+## Skipping tracks reasons comparison
+
+```{python}
+# Reasons for skipping tracks
+
+reasons_to_end_track = df['reason_end'].value_counts().reset_index()
+reasons_to_end_track.columns = ['Reason', 'Count']
+
+fig8 = px.pie(reasons_to_end_track, 
+               names='Reason', 
+               values='Count', 
+               title='Reasons for Ending Tracks',
+               labels={'Reason': 'Reason', 'Count': 'Count'},
+               hole=0.2)
+
+fig8.update_traces(textposition='inside', textinfo='percent+label')
+fig8.update_layout(
+    width=900,
+    height=600,
+    margin=dict(l=20, r=20, t=50, b=0)
+)
+fig8.show()
+```
+
+---
+
+## Starting tracks reasons comparison
+
+```{python}
+# Reasons for starting tracks
+
+reasons_to_start_track = df['reason_start'].value_counts().reset_index()
+reasons_to_start_track.columns = ['Reason', 'Count']
+
+fig9 = px.pie(reasons_to_start_track, 
+               names='Reason', 
+               values='Count', 
+               title='Reasons for Starting Tracks',
+               labels={'Reason': 'Reason', 'Count': 'Count'},
+               hole=0.2)
+
+fig9.update_traces(textposition='inside', textinfo='percent+label')
+fig9.update_layout(
+    width=900,
+    height=600,
+    margin=dict(l=20, r=20, t=50, b=0)
+)
+fig9.show()
+```
+
+---
+
+## Platform Usage Over the Years
+
+```{python}
+# Platform usage over the years
+
+df_platform_over_time = df.groupby(['year', 'platform']).agg(total_listening_time=('ms_played', 'sum')).reset_index()
+df_platform_over_time['minutes_listened'] = (df_platform_over_time['total_listening_time'] / 60000).round(2)
+
+fig10 = px.line(df_platform_over_time, 
+                x='year', 
+                y='minutes_listened', 
+                color='platform',
+                title='Platform Usage Over the Years',
+                labels={'minutes_listened': 'Total Listening Time (mins)', 'year': 'Year'},
+                markers=True)
+
+fig10.update_layout(
+    width=1000,
+    height=400,
+    margin=dict(l=20, r=20, t=50, b=0)
+)
+fig10.show()
+```

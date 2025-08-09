@@ -1,17 +1,23 @@
 ---
-title: "Welcome to my portfolio"
+title: "Welcome! 👋" 
 ---
 
 <iframe src="https://drive.google.com/file/d/138z-X7nq6s99TiHzHpZC7Z-L7xnd_Yl_/preview" width="640" height="360" allow="autoplay"></iframe>
 
-# ¡Hola! 👋
+# Hello! 👋
 
-Soy analista de datos con experiencia en Python, SQL y visualización de datos.  
-En este sitio encontrarás algunos de mis proyectos y un poco sobre mi trayectoria.
+I'm a data analyst with experience on Python, SQL, Microsoft Excel, Tableau and PowerBI to clean, manipulate and visualize data.
+I'm currently studying more about R, general statistics and cloud services such as AWS.
 
-## Destacados
-- 📊 Análisis de ventas con Python y Pandas.
-- 📈 Dashboard interactivo con Power BI.
-- 🤖 Modelo de predicción usando Machine Learning.
+Feel free to explore every section of this website and know more about my work.
+[Projects](proyectos.qmd)
 
-Para más detalles, visita la sección de [Proyectos](proyectos.qmd).
+## Key Skills
+
+- 🧽 Data manipulation with Pandas and Numpy.
+- 🔎 EDA.
+- 📈 Primary data visualization with Pyplot and Seaborn.
+- 📊 Formal data visualization with Plotly.
+- 💻 Dashboard creation with PowerBI and Tableau.
+- 🤖 Basic ML knowledge with scikit-learn.
+- 📋 Final presentations on Quarto, Powerpoint and Canva.

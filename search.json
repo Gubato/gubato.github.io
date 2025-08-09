@@ -9,36 +9,22 @@
   {
     "objectID": "proyectos.html",
     "href": "proyectos.html",
-    "title": "Mis Proyectos",
+    "title": "Project Portfolio",
     "section": "",
-    "text": "Descripción: Limpieza y análisis de datos de ventas usando Python y Pandas.\nCódigo: Ver en GitHub\n\n\n\nDescripción: Creación de dashboard interactivo con Power BI para seguimiento de métricas de personal.\nDemo: Ver dashboard\n\n\n\nDescripción: Modelo de Machine Learning para predecir demanda semanal de productos.\nCódigo: Ver en GitHub"
+    "text": "Descripción: Given a Spotify random user activity dataset, visualize important aspects of his app usage.\nCódigo: PENDING\n```{include: Spotify/Presentation.qmd}"
   },
   {
-    "objectID": "proyectos.html#análisis-de-ventas",
-    "href": "proyectos.html#análisis-de-ventas",
-    "title": "Mis Proyectos",
+    "objectID": "proyectos.html#spotify-users-activity-analysis",
+    "href": "proyectos.html#spotify-users-activity-analysis",
+    "title": "Project Portfolio",
     "section": "",
-    "text": "Descripción: Limpieza y análisis de datos de ventas usando Python y Pandas.\nCódigo: Ver en GitHub"
+    "text": "Descripción: Given a Spotify random user activity dataset, visualize important aspects of his app usage.\nCódigo: PENDING\n```{include: Spotify/Presentation.qmd}"
   },
   {
-    "objectID": "proyectos.html#dashboard-de-recursos-humanos",
-    "href": "proyectos.html#dashboard-de-recursos-humanos",
-    "title": "Mis Proyectos",
-    "section": "",
-    "text": "Descripción: Creación de dashboard interactivo con Power BI para seguimiento de métricas de personal.\nDemo: Ver dashboard"
-  },
-  {
-    "objectID": "proyectos.html#predicción-de-demanda",
-    "href": "proyectos.html#predicción-de-demanda",
-    "title": "Mis Proyectos",
-    "section": "",
-    "text": "Descripción: Modelo de Machine Learning para predecir demanda semanal de productos.\nCódigo: Ver en GitHub"
-  },
-  {
-    "objectID": "index.html#destacados",
-    "href": "index.html#destacados",
-    "title": "Welcome to my portfolio",
-    "section": "Destacados",
-    "text": "Destacados\n\n📊 Análisis de ventas con Python y Pandas.\n📈 Dashboard interactivo con Power BI.\n🤖 Modelo de predicción usando Machine Learning.\n\nPara más detalles, visita la sección de Proyectos."
+    "objectID": "index.html#key-skills",
+    "href": "index.html#key-skills",
+    "title": "Welcome! 👋",
+    "section": "Key Skills",
+    "text": "Key Skills\n\n🧽 Data manipulation with Pandas and Numpy.\n🔎 EDA.\n📈 Primary data visualization with Pyplot and Seaborn.\n📊 Formal data visualization with Plotly.\n💻 Dashboard creation with PowerBI and Tableau.\n🤖 Basic ML knowledge with scikit-learn.\n📋 Final presentations on Quarto, Powerpoint and Canva."
   }
 ]
