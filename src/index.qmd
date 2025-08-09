@@ -2,6 +2,8 @@
 title: "Welcome to my portfolio"
 ---
 
+<iframe src="https://drive.google.com/file/d/138z-X7nq6s99TiHzHpZC7Z-L7xnd_Yl_/preview" width="640" height="360" allow="autoplay"></iframe>
+
 # ¡Hola! 👋
 
 Soy analista de datos con experiencia en Python, SQL y visualización de datos.  
