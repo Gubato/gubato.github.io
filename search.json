@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "sobre-mi.html",
+    "href": "sobre-mi.html",
+    "title": "Sobre mí",
+    "section": "",
+    "text": "Sobre mí\nSoy apasionado por el análisis de datos y la resolución de problemas usando herramientas como:\n\nPython (Pandas, Matplotlib, Seaborn)\nSQL\nPower BI y Tableau\nQuarto para documentación y presentación\n\nActualmente trabajo en [Tu Empresa] y busco oportunidades para seguir desarrollando mis habilidades en análisis y ciencia de datos."
+  },
+  {
+    "objectID": "proyectos.html",
+    "href": "proyectos.html",
+    "title": "Mis Proyectos",
+    "section": "",
+    "text": "Descripción: Limpieza y análisis de datos de ventas usando Python y Pandas.\nCódigo: Ver en GitHub\n\n\n\nDescripción: Creación de dashboard interactivo con Power BI para seguimiento de métricas de personal.\nDemo: Ver dashboard\n\n\n\nDescripción: Modelo de Machine Learning para predecir demanda semanal de productos.\nCódigo: Ver en GitHub"
+  },
+  {
+    "objectID": "proyectos.html#análisis-de-ventas",
+    "href": "proyectos.html#análisis-de-ventas",
+    "title": "Mis Proyectos",
+    "section": "",
+    "text": "Descripción: Limpieza y análisis de datos de ventas usando Python y Pandas.\nCódigo: Ver en GitHub"
+  },
+  {
+    "objectID": "proyectos.html#dashboard-de-recursos-humanos",
+    "href": "proyectos.html#dashboard-de-recursos-humanos",
+    "title": "Mis Proyectos",
+    "section": "",
+    "text": "Descripción: Creación de dashboard interactivo con Power BI para seguimiento de métricas de personal.\nDemo: Ver dashboard"
+  },
+  {
+    "objectID": "proyectos.html#predicción-de-demanda",
+    "href": "proyectos.html#predicción-de-demanda",
+    "title": "Mis Proyectos",
+    "section": "",
+    "text": "Descripción: Modelo de Machine Learning para predecir demanda semanal de productos.\nCódigo: Ver en GitHub"
+  },
+  {
+    "objectID": "index.html#destacados",
+    "href": "index.html#destacados",
+    "title": "Welcome to my portfolio",
+    "section": "Destacados",
+    "text": "Destacados\n\n📊 Análisis de ventas con Python y Pandas.\n📈 Dashboard interactivo con Power BI.\n🤖 Modelo de predicción usando Machine Learning.\n\nPara más detalles, visita la sección de Proyectos."
+  }
+]
