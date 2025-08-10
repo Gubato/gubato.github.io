@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Daniel Gutiérrez - Data Analyst"
+  favicon: "favicon.ico"
   navbar:
     left:
       - text: "Home"
@@ -12,6 +13,8 @@ website:
         href: proyectos.qmd
       - text: "About Me"
         href: sobre-mi.qmd
+      - text: "Contact"
+        href: contact.qmd
     right:
       - icon: github
         href: https://github.com/Gubato
