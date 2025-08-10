@@ -2,26 +2,37 @@
 title: "Sobre mí"
 ---
 
-# About me
+# About Me
 
-My full name is Luis Daniel Gutiérrez Renero. I have a Bachelor's Degree on Audio Engineering which I gained at Rec Música Centro de Estudios Musicales, a local university here in México.
-This university is strongly attached to Berklee College of Music @ Boston, they even have an official partnership.
+My name is **Luis Daniel Gutiérrez Renero**, and I hold a **Bachelor’s Degree in Audio Engineering** from *Rec Música Centro de Estudios Musicales*, a recognized institution in Mexico with an official academic partnership with Berklee College of Music (Boston, MA).
 
-My specialty on music was audio mastering for streaming on platforms such as Spotify, Apple Music, Amazon Music, etc.
+My specialization in music was **audio mastering** for digital streaming platforms such as Spotify, Apple Music, and Amazon Music.  
+After graduating, I collaborated on mastering projects with artists including **Luis Guinea**, **Rogelio Edel**, and **Alec Roqui**.
 
-Once I finished college, I made some mastering work with some artists like Luis Guinea, Rogelio Edel, Alec Roqui.
-<a href= "https://open.spotify.com/playlist/3RepLcKraLhrv0MFpDfWlv?si=cf78133ec2c64750" target="_blank"> Spotify Playlist </a>
+<a href="https://open.spotify.com/playlist/3RepLcKraLhrv0MFpDfWlv?si=cf78133ec2c64750" target="_blank">Spotify Playlist</a>
 
-Meanwhile I was working with all these musicians I started a job at a Call Center named REDES. It is a Collection Call Center.
-Here I started a position as an HR with recruitment tasks. I gained a lot of experience on soft skills such as clear communication, being kind and practice empathy.
+While working with these musicians, I also joined a call center company named **REDES**, specializing in debt collection. I began as an **HR Assistant** focusing on recruitment, where I strengthened my soft skills in clear communication, kindness, and empathy.
 
---- 
+As the company grew, new opportunities emerged, and thanks to my knowledge of internal payroll processes, I was promoted to **Payroll Coordinator**, a role I continue to hold today.
 
-<!--- Soy apasionado por el análisis de datos y la resolución de problemas usando herramientas como:
+**Key achievements at REDES include:**
+- Creating a comprehensive employee database using Google Forms, Google Sheets, and Microsoft Excel.
+- Implementing an employee-code system to streamline bonus payment processing.
+- Designing and implementing a hygiene and safety plan compliant with governmental and federal regulations.
+- Developing social media content and internal communication materials.
+- Reducing payroll-related discrepancies by **up to 85%**.
+- Automating HR processes through Python scripting.
 
-- Python (Pandas, Matplotlib, Seaborn)
-- SQL
-- Power BI y Tableau
-- Quarto para documentación y presentación
+About two and a half years into this role, I discovered the field of **Data Analytics** and realized that many aspects of my work were directly related to it. This sparked my interest and led me to enroll in **TripleTen’s Data Analysis Bootcamp**, a 7-month intensive program based on agile methodologies.
 
-Actualmente trabajo en [Tu Empresa] y busco oportunidades para seguir desarrollando mis habilidades en análisis y ciencia de datos.
+**Core competencies developed during the Bootcamp:**
+- Programming in Python.
+- Using essential libraries: Pandas, NumPy, SciPy, Scikit-learn, Matplotlib, Plotly, and Seaborn.
+- Fundamentals of statistics.
+- A/B testing methodologies.
+- Cohort-based analysis.
+- Business Intelligence fundamentals.
+- Hypothesis testing (Levene, T-Test, Z-Test, Mann-Whitney U, confidence intervals).
+
+Today, I combine my background in audio engineering, human resources, and payroll management with my skills in data analytics to approach challenges from both creative and analytical perspectives.  
+I am passionate about transforming data into actionable insights, streamlining processes, and delivering results that create a measurable impact. My goal is to keep expanding my expertise and contribute to projects that drive innovation and efficiency.
