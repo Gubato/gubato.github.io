@@ -1,21 +1,27 @@
 ---
 title: "About me"
 ---
+---
 
-# About Me
+<img src="Bachelors.jpg" alt="Daniel at his graduation" width="50%" height="275px">
 
+<div style="text-align: justify;">
 My name is **Luis Daniel Gutiérrez Renero**, and I hold a **Bachelor’s Degree in Audio Engineering** from *Rec Música Centro de Estudios Musicales*, a recognized institution in Mexico with an official academic partnership with Berklee College of Music (Boston, MA).
 
 My specialization in music was **audio mastering** for digital streaming platforms such as Spotify, Apple Music, and Amazon Music.  
 After graduating, I collaborated on mastering projects with artists including **Luis Guinea**, **Rogelio Edel**, and **Alec Roqui**.
+</div>
 
 <a href="https://open.spotify.com/playlist/3RepLcKraLhrv0MFpDfWlv?si=cf78133ec2c64750" target="_blank">Spotify Playlist</a>
 
+<div style="text-align: justify;">
 While working with these musicians, I also joined a call center company named **REDES**, specializing in debt collection. I began as an **HR Assistant** focusing on recruitment, where I strengthened my soft skills in clear communication, kindness, and empathy.
 
 As the company grew, new opportunities emerged, and thanks to my knowledge of internal payroll processes, I was promoted to **Payroll Coordinator**, a role I continue to hold today.
+</div>
 
 **Key achievements at REDES include:**
+
 - Creating a comprehensive employee database using Google Forms, Google Sheets, and Microsoft Excel.
 - Implementing an employee-code system to streamline bonus payment processing.
 - Designing and implementing a hygiene and safety plan compliant with governmental and federal regulations.
@@ -23,9 +29,12 @@ As the company grew, new opportunities emerged, and thanks to my knowledge of in
 - Reducing payroll-related discrepancies by **up to 85%**.
 - Automating HR processes through Python scripting.
 
+<div style="text-align: justify;">
 About two and a half years into this role, I discovered the field of **Data Analytics** and realized that many aspects of my work were directly related to it. This sparked my interest and led me to enroll in **TripleTen’s Data Analysis Bootcamp**, a 7-month intensive program based on agile methodologies.
+</div>
 
 **Core competencies developed during the Bootcamp:**
+
 - Programming in Python.
 - Using essential libraries: Pandas, NumPy, SciPy, Scikit-learn, Matplotlib, Plotly, and Seaborn.
 - Fundamentals of statistics.
@@ -34,5 +43,7 @@ About two and a half years into this role, I discovered the field of **Data Anal
 - Business Intelligence fundamentals.
 - Hypothesis testing (Levene, T-Test, Z-Test, Mann-Whitney U, confidence intervals).
 
+<div style="text-align: justify;">
 Today, I combine my background in audio engineering, human resources, and payroll management with my skills in data analytics to approach challenges from both creative and analytical perspectives.  
 I am passionate about transforming data into actionable insights, streamlining processes, and delivering results that create a measurable impact. My goal is to keep expanding my expertise and contribute to projects that drive innovation and efficiency.
+</div>
