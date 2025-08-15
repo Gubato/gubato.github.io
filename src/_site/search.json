@@ -11,7 +11,7 @@
     "href": "proyectos.html",
     "title": "Project Portfolio",
     "section": "",
-    "text": "Description: Given a Spotify random user activity dataset, visualize important aspects of his app usage.\nCode:  GitHub \nWatch full presentation\n\n\n\n\n\n\nDescription: Given a call history dataset, detect inefficient operators in a Call Center. You must take in count outliers and different clients, since every client will have different amount of incalls and outcalls.\nCode:  GitHub \nDashboard:  Tableau"
+    "text": "Description: Given a Spotify random user activity dataset, visualize important aspects of his app usage.\nCode:  GitHub \nWatch full presentation\n\n\n\n\n\n\nDescription: Given a call history dataset, detect inefficient operators in a Call Center. You must take in count outliers and different clients, since every client will have different amount of incalls and outcalls.\nCode:  GitHub \nDashboard:  Tableau \n\n                   \n\n\n\n\n\nDescription: Create a Dashboard where we can analyze and observe trending topics on Youtube videos.\nDashboard:  Tableau"
   },
   {
     "objectID": "proyectos.html#spotify-users-activity-analysis",
@@ -40,5 +40,19 @@
     "title": "Contact",
     "section": "",
     "text": "Email: luis_d_gutierrez@hotmail.com\nPhone: +52 55 3197 8938\n GitHub \n LinkedIn"
+  },
+  {
+    "objectID": "proyectos.html#call-center-operators-analysis-1",
+    "href": "proyectos.html#call-center-operators-analysis-1",
+    "title": "Project Portfolio",
+    "section": "",
+    "text": "Description: Create a Dashboard where we can analyze and observe trending topics on Youtube videos.\nDashboard:  Tableau"
+  },
+  {
+    "objectID": "proyectos.html#youtube-trending-videos",
+    "href": "proyectos.html#youtube-trending-videos",
+    "title": "Project Portfolio",
+    "section": "",
+    "text": "Description: Create a Dashboard where we can analyze and observe trending topics on Youtube videos.\nDashboard:  Tableau"
   }
 ]
