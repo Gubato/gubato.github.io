@@ -2,8 +2,8 @@
 title: "Contact"
 ---
 
-- Email: luis_d_gutierrez@hotmail.com
-- Phone: +52 55 3197 8938
-- <a href="https://github.com/Gubato" target="_blank"> GitHub </a>
-- <a href="https://www.linkedin.com/in/danielgutierrez-dataanalyst/" target="_blank"> LinkedIn </a>
+- 📩 Email: luis_d_gutierrez@hotmail.com
+- 📞 Phone: +52 55 3197 8938
+- 🖥️ <a href="https://github.com/Gubato" target="_blank"> GitHub </a>
+- 📝 <a href="https://www.linkedin.com/in/danielgutierrez-dataanalyst/" target="_blank"> LinkedIn </a>
 

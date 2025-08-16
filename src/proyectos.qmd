@@ -2,9 +2,14 @@
 title: "Project Portfolio"
 ---
 
-# Projects
+# Projects 💼
 
-## 1. Spotify User's Activity Analysis
+Welcome to my portfolio section! 
+I'll keep uploading new projects as they come along and hopefully you can get a full idea of what my workflow is and what I like to do whenever I'm performing an analysis.
+
+Enjoy! 🎉 🎊
+
+## 1. Spotify User's Activity Analysis 📈
 - **Description:** Given a Spotify random user activity dataset, visualize important aspects of his app usage.
 
 - **Code:** <a href="https://github.com/Gubato/gubato.github.io/blob/main/Projects/Spotify/Top%20Spotify%20tracks.ipynb" 
@@ -24,7 +29,7 @@ title: "Project Portfolio"
             style="border:none;">
 </iframe>
 
-## 2. Call Center operators analysis
+## 2. Call Center operators analysis 📈
 **Description:** Given a call history dataset, detect inefficient operators in a Call Center. You must take in count outliers and different clients, since every client will have different amount of incalls and outcalls.
 
 **Code:** <a href="https://github.com/Gubato/gubato.github.io/blob/main/Projects/Call%20center%20operators/FP%20-%20Callcenter%20operators%20analysis.ipynb" 
@@ -77,7 +82,7 @@ title: "Project Portfolio"
 </script>
 
 
-## 3. Youtube trending videos
+## 3. Youtube trending videos 📈
 **Description:** Create a Dashboard where we can analyze and observe trending topics on Youtube videos.
 
 **Dashboard**: <a href="https://public.tableau.com/views/Trendingbytime_17442284945450/Dashboard1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
@@ -123,4 +128,15 @@ title: "Project Portfolio"
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSHUfSUnpuG8BzY3LLMarQ4TLLPzc2c3ty5mwom5Dh4YC-oQA2sZOZkZQBrUW1Zxw/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-## 4. 
+## 4. Machine Learning for a gym churn rate 📈
+
+**Description:** Create a machine learning model that effectively finds churn-risk clients and propose strategies to keep them subscribed to the gym services.
+
+**Code:** <a href="https://github.com/Gubato/Data-Analysis/blob/main/06%20-%20ML%20basics%20for%20churn%20rates/P13%20-%20ML%20basics.ipynb" 
+    target="_blank" style="
+    background-color:#007BFF;
+    color:white;
+    padding:10px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;"> GitHub </a>
